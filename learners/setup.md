@@ -69,17 +69,14 @@ You have to install R before you install RStudio.
 
 If you already have R and RStudio installed, first check if your R version is up to date:
 
-* When you open RStudio your R version will be printed in the console on the bottom left. Alternatively, you can type `sessionInfo()` into the console. If your R version is 4.0.0 or later, you don't need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website [for Windows](https://cran.r-project.org/bin/windows/base/), [for MacOS](https://cran.r-project.org/bin/macosx/), or [for Linux](https://cran.r-project.org/bin/linux/)
+* When you open RStudio, your R version will be printed in the console on the bottom left. Alternatively, you can type `sessionInfo()` into the console. If your R version is 4.2 or later, you don't need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website [for Windows](https://cran.r-project.org/bin/windows/base/), [for MacOS](https://cran.r-project.org/bin/macosx/), or [for Linux](https://cran.r-project.org/bin/linux/)
 * It is not necessary to remove old versions of R from your system, but if you wish to do so you can check [How do I uninstall R?](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f) 
-* After installing a new version of R, you will have to reinstall all your packages with the new version. For Windows, there is a package called `installr` that can help you with upgrading your R version and migrate your package library. A similar package called `pacman` can help with updating R packages across
-To update RStudio to the latest version, open RStudio and click on 
-`Help > Check for Updates`. If a new version is available follow the 
-instruction on screen. By default, RStudio will also automatically notify you 
-of new versions every once in a while.
+* After installing a new version of R, you will have to reinstall all your packages with the new version. There are different methods for automating the process of reinstalling packages, [such as this blog post](https://abraver.github.io/usefulRstuff/posts/upgrading_R/), but you can also install packages as you find that you need them with `install.packages()`.
+To update RStudio to the latest version, open RStudio and click on  `Help > Check for Updates`. If a new version is available follow the instruction on screen. By default, RStudio will also automatically notify you of new versions every once in a while.
 
 ::::::::::::::::::::::::::::: callout
 
-The changes introduced by new R versions are usually backwards-compatible. That is, your old code should still work after updating your R version. However, if breaking changes happen, it is useful to know that you can have multiple versions of R installed in parallel and that you can switch between them in RStudio by going to `Tools > Global Options > General > Basic`.
+The changes introduced by new R versions are usually backwards-compatible. That is, your old code should still work after updating your R version. However, if breaking changes happen, it is useful to know that you can have multiple versions of R installed in parallel. If this is something you would like to do, we recommend using [rig](https://github.com/r-lib/rig).
 
 While this may sound scary, it is **far more common** to run into issues due to using out-of-date versions of R or R packages. Keeping up with the latest versions of R, RStudio, and any packages you regularly use is a good practice.
 
@@ -87,15 +84,15 @@ While this may sound scary, it is **far more common** to run into issues due to 
 
 ### Install required R packages
 
-During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages `tidyverse`, and `ratdat`. 
+During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the `tidyverse` package. 
 
 To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the <kbd>Enter</kbd> (Windows and Linux) or <kbd>Return</kbd> (MacOS) to execute the command.
 
 ```r
-install.packages(c("tidyverse", "ratdat"))
+install.packages("tidyverse")
 ```
 
-Alternatively, you can install the packages using RStudio's graphical user interface by going to `Tools > Install Packages` and typing the names of the packages separated by a comma.
+Alternatively, you can install the packages using RStudio's graphical user interface by going to `Tools > Install Packages` and typing the names of the package.
 
 R tries to download and install the packages on your machine. 
 
@@ -103,14 +100,13 @@ When the installation has finished, you can try to load the packages by pasting 
 
 ```r
 library(tidyverse)
-library(ratdat)
 ```
 
 If you do not see an error like `there is no package called ‘...’` you are good to go! 
 
 ### Updating R packages
 
-Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bugfixes. To update the packages that you have installed, click `Update` in the `Packages` tab in the bottom right panel of RStudio, or go to `Tools > Check for Package Updates...` 
+Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bugfixes. To update the packages that you have installed, click `Update` in the `Packages` tab in the bottom right panel of RStudio, or go to `Tools > Check for Package Updates...`. Another way to update packages is to run `update.packages()` in the console.
 
 You should update **all of the packages** required for the lesson, even if you installed them relatively recently.
 
@@ -120,8 +116,5 @@ Sometimes, package updates introduce changes that break your old code, which can
 
 We will download the data directly from R during the lessons. However, if you are expecting problems with the network, it may be better to download the data beforehand and store it on your machine.
 
-The data files for the lesson can be downloaded manually:
-
- - [cleaned data](../episodes/data/cleaned/surveys_complete_77_89.csv) and 
- - [zip file of raw data](../episodes/data/new_data.zip).
+The data files for the lesson can be downloaded manually here: <https://doi.org/10.6084/m9.figshare.1314459>
 
