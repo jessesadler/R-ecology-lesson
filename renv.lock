@@ -180,8 +180,7 @@
       "Description": "Provides color schemes for maps (and other graphics) designed by Cynthia Brewer as described at http://colorbrewer2.org.",
       "License": "Apache License 2.0",
       "NeedsCompilation": "no",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "Rcpp": {
       "Package": "Rcpp",
@@ -276,8 +275,7 @@
       "License": "GPL-2 | GPL-3",
       "URL": "http://www.rforge.net/base64enc",
       "NeedsCompilation": "yes",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "bit": {
       "Package": "bit",
@@ -651,8 +649,7 @@
       "NeedsCompilation": "no",
       "Author": "Jennifer Bryan [cre, aut], Hadley Wickham [ctb]",
       "Maintainer": "Jennifer Bryan <jenny@stat.ubc.ca>",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "cli": {
       "Package": "cli",
@@ -1896,8 +1893,7 @@
       "NeedsCompilation": "no",
       "Author": "Rich FitzJohn [aut, cre]",
       "Maintainer": "Rich FitzJohn <rich.fitzjohn@gmail.com>",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "isoband": {
       "Package": "isoband",
@@ -2068,8 +2064,7 @@
         "stats",
         "graphics"
       ],
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "lattice": {
       "Package": "lattice",
@@ -2749,30 +2744,6 @@
       "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
       "Repository": "RSPM"
     },
-    "ratdat": {
-      "Package": "ratdat",
-      "Version": "1.1.0",
-      "Source": "Repository",
-      "Type": "Package",
-      "Title": "Portal Project Teaching Database",
-      "Authors@R": "c(person(given = c(\"S.K.\", \"Morgan\"), family = \"Ernest\", role = \"aut\", comment = c(ORCID = \"0000-0002-6026-8530\")), person(given = c(\"James\", \"H.\"),  family = \"Brown\", email = \"jhbrown@unm.edu\", role = c(\"aut\")), person(given = c(\"Thomas\", \"J.\"), family = \"Valone\", email = \"thomas.valone@slu.edu\", role = c(\"aut\")), person(given = c(\"Michael\", \"J.\"), family = \"Culshaw-Maurer\", role = \"aut\", comment = c(ORCID = \"0000-0003-2205-8679\"), email = \"culshawmaurer@arizona.edu\"), person(given = c(\"Ethan\", \"P.\"), family = \"White\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0001-6728-7745\"), email = \"ethan@weecology.org\"))",
-      "Description": "A simplified version of the Portal Project Database designed for teaching. It provides a real world example of life-history, population, and ecological data, with sufficient complexity to teach many aspects of data analysis and management, but with many complexities removed to allow students to focus on the core ideas and skills being taught. The full database (which should be used for research) is available at <https://github.com/weecology/PortalData>.",
-      "Depends": [
-        "R (>= 3.5.0)"
-      ],
-      "License": "CC0",
-      "Encoding": "UTF-8",
-      "LazyData": "true",
-      "RoxygenNote": "7.2.3",
-      "Suggests": [
-        "testthat (>= 3.0.0)"
-      ],
-      "Config/testthat/edition": "3",
-      "NeedsCompilation": "no",
-      "Author": "S.K. Morgan Ernest [aut] (<https://orcid.org/0000-0002-6026-8530>), James H. Brown [aut], Thomas J. Valone [aut], Michael J. Culshaw-Maurer [aut] (<https://orcid.org/0000-0003-2205-8679>), Ethan P. White [aut, cre] (<https://orcid.org/0000-0001-6728-7745>)",
-      "Maintainer": "Ethan P. White <ethan@weecology.org>",
-      "Repository": "RSPM"
-    },
     "readr": {
       "Package": "readr",
       "Version": "2.1.5",
@@ -3311,8 +3282,7 @@
       "NeedsCompilation": "no",
       "Author": "Simon Potter [aut, trl, cre], Simon Sapin [aut], Ian Bicking [aut]",
       "Maintainer": "Simon Potter <simon@sjp.co.nz>",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "stringi": {
       "Package": "stringi",
@@ -3852,8 +3822,7 @@
       "URL": "https://www.rforge.net/uuid",
       "BugReports": "https://github.com/s-u/uuid/issues",
       "NeedsCompilation": "yes",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     },
     "vctrs": {
       "Package": "vctrs",
@@ -4144,8 +4113,7 @@
       "URL": "https://github.com/vubiostat/r-yaml/",
       "BugReports": "https://github.com/vubiostat/r-yaml/issues",
       "NeedsCompilation": "yes",
-      "Repository": "RSPM",
-      "Encoding": "UTF-8"
+      "Repository": "CRAN"
     }
   }
 }
