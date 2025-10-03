@@ -258,27 +258,23 @@ The default discrete color scale isn't always ideal: it isn't friendly to viewer
 
 
 ``` r
-ggplot(data = complete_old, mapping = aes(x = weight, y = hindfoot_length, color = plot_type)) +
+ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length, color = plot_type)) +
   geom_point(alpha = 0.2) +
   scale_color_viridis_d()
 ```
 
-``` error
-#> Error: object 'complete_old' not found
-```
+<img src="fig/03-visualization-ggplot2-rendered-scale-viridis-1.png" style="display: block; margin: auto;" />
 
 Scales don't just apply to colors- any plot component that you put inside `aes()` can be modified with `scale_` functions. Just as we modified the scale used to map `plot_type` to `color`, we can modify the way that `weight` is mapped to the `x` axis by using the `scale_x_log10()` function:
 
 
 ``` r
-ggplot(data = complete_old, mapping = aes(x = weight, y = hindfoot_length, color = plot_type)) +
+ggplot(data = surveys_complete, mapping = aes(x = weight, y = hindfoot_length, color = plot_type)) +
   geom_point(alpha = 0.2) +
   scale_x_log10()
 ```
 
-``` error
-#> Error: object 'complete_old' not found
-```
+<img src="fig/03-visualization-ggplot2-rendered-scale-log-1.png" style="display: block; margin: auto;" />
 
 One nice thing about `ggplot` and the `tidyverse` in general is that groups of functions that do similar things are given similar names. Any function that modifies a `ggplot` scale starts with `scale_`, making it easier to search for the right function.
 
@@ -529,11 +525,11 @@ finalplot <- myplot +
   facet_wrap(vars(sex), ncol = 1)
 ```
 
-After this, we can run `ggsave()` to save our plot. The first argument we give is the path to the file we want to save, including the correct file extension. This code will make an image called `rodent_size_plots.jpg` in the `images/` folder of our current project. We are making a `.jpg`, but you can save `.pdf`, `.tiff`, and other file formats. Next, we tell it the name of the plot object we want to save. We can also specify things like the width and height of the plot in inches.
+After this, we can run `ggsave()` to save our plot. The first argument we give is the path to the file we want to save, including the correct file extension. This code will make an image called `rodent_size_plots.jpg` in the `fig/` folder of our current project. We are making a `.png`, but you can save `.pdf`, `.tiff`, and other file formats. Next, we tell it the name of the plot object we want to save. We can also specify things like the width and height of the plot in inches.
 
 
 ``` r
-ggsave(filename = "images/rodent_size_plots.jpg", plot = finalplot,
+ggsave(filename = "fig/rodent_size_plots.png", plot = finalplot,
        height = 6, width = 8)
 ```
 
@@ -541,7 +537,7 @@ ggsave(filename = "images/rodent_size_plots.jpg", plot = finalplot,
 
 ## Challenge 4: Make your own plot
 
-Try making your own plot! You can run `str(complete_old)` or `?complete_old` to explore variables you might use in your new plot. Feel free to use variables we have already seen, or some we haven't explored yet.
+Try making your own plot! You can run `glimpse(surveys_complete)` to explore variables you might use in your new plot. Feel free to use variables we have already seen, or some we haven't explored yet.
 
 Here are a couple ideas to get you started:
 
