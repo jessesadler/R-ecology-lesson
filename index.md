@@ -20,12 +20,10 @@ time, and with less pain. The lessons below were designed for those interested
 in working with ecology data in R.
 
 This is an introduction to R designed for participants with no programming
-experience. These lessons adapt a 6-hour curriculum down to between 2 and 3 hours. 
-They start withsome basic information about R syntax, the RStudio interface, and move throughhow to import CSV files, the structure of data frames, how to deal with factors,
-how to add/remove rows and columns, how to calculate summary statistics from a
-data frame, and a brief introduction to plotting. Because it's shortened, you may
-want to look at the [original lesson](https://datacarpentry.org/R-ecology-lesson/index.html) for more detail and additional concepts (such as 
-working with databases).
+experience. This lesson adapts a 6-hour curriculum down to between 2 and 3 hours. 
+The episodes start withsome basic information about R syntax, the RStudio interface,
+and move through how to import CSV files, wrangle data, and calculate summary statistics, before ending with a brief introduction to plotting. Because it's shortened, you may
+want to look at the [original lesson](https://datacarpentry.org/R-ecology-lesson/index.html) for more detail.
 
 This lesson assumes no prior knowledge of R or RStudio and no programming
 experience.
